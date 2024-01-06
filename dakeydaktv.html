@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .message-container {
+      max-width: 600px;
+      background-color: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .message-header {
+      background-color: #0095f6;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .message-body {
+      padding: 15px;
+      height: 300px;
+      overflow-y: auto;
+    }
+
+    .message {
+      margin-bottom: 15px;
+    }
+
+    .message-sender {
+      font-weight: bold;
+      color: #0095f6;
+    }
+
+    .message-text {
+      margin-top: 5px;
+      color: #333;
+    }
+
+    .message-timestamp {
+      font-size: 0.8em;
+      color: #666;
+    }
+
+    .message-input-container {
+      display: flex;
+      margin-top: 10px;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+    }
+
+    .message-input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      outline: none;
+      resize: none;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+
+    .send-button {
+      background-color: #0095f6;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+  </style>
+  <title>Fancy Instagram-like Message Box</title>
+</head>
+<body>
+
+<div class="message-container">
+  <div class="message-header">
+  </div>
+
+  <div class="message-body">
+    <div class="message">
+      <span class="message-sender">Person A:</span>
+      <div class="message-text">Have you been to Paris before?</div>
+      <div class="message-timestamp">Just now</div>
+    </div>
+
+    <div class="message">
+        <span class="message-sender">Person B:</span>
+        <div class="message-text">Yes, I have. I went there last summer.</div>
+        <div class="message-timestamp">2 minutes ago</div>
+      </div>
+  
+      <div class="message">
+        <span class="message-sender">Person A:</span>
+        <div class="message-text">When did you arrive?</div>
+        <div class="message-timestamp">1 minute ago</div>
+      </div>
+  
+      <div class="message">
+        <span class="message-sender">Person B:</span>
+        <div class="message-text">I arrived on a Monday morning.</div>
+        <div class="message-timestamp">1 minute ago</div>
+      </div>
+  
+      <div class="message">
+        <span class="message-sender">Person A:</span>
+        <div class="message-text">Where did you stay?</div>
+        <div class="message-timestamp">Just now</div>
+      </div>
+  
+      <div class="message">
+        <span class="message-sender">Person B:</span>
+        <div class="message-text">I stayed in a small hotel in the Montmartre district.</div>
+        <div class="message-timestamp">2 minutes ago</div>
+      </div>
+  
+      <div class="message">
+        <span class="message-sender">Person A:</span>
+        <div class="message-text">Did you like it?</div>
+        <div class="message-timestamp">Just now</div>
+      </div>
+  
+      <div class="message">
+        <span class="message-sender">Person B:</span>
+        <div class="message-text">Yes, I did. It was a very charming city.</div>
+        <div class="message-timestamp">1 minute ago</div>
+      </div>
+  
+      <div class="message">
+        <span class="message-sender">Person A:</span>
+        <div class="message-text">What did you do while you were there?</div>
+        <div class="message-timestamp">Just now</div>
+      </div>
+  
+      <div class="message">
+        <span class="message-sender">Person B:</span>
+        <div class="message-text">I visited the Eiffel Tower, the Louvre Museum, and Notre Dame Cathedral. I also walked around the Champs-Élysées and ate some delicious croissants.</div>
+        <div class="message-timestamp">2 minutes ago</div>
+      </div>
+
+  </div>
+
+  <div class="message-input-container">
+    <textarea class="message-input" placeholder="Type your message..."></textarea>
+    <button class="send-button">Send</button>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Upcoming Events</title>
+        <!-- Link to Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+
+            .row {
+                display: flex;
+                justify-content: center;
+            }
+            p{
+                font-size: 25px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            h1{
+                font-size: 40px;
+            }
+
+            .NEWS {
+                background-color: blueviolet;
+                color: white;
+                margin: 20px;
+                padding: 20px;
+            }
+            body {
+                background-color: #f8f9fa;
+                color: #343a40;
+            }
+    
+            h1 {
+                font-size: 36px;
+            }
+    
+            p {
+                font-size: 18px;
+            }
+    
+            h2 {
+                margin-top: 30px;
+                font-size: 24px;
+                color: white;
+                background-color: darkblue;
+                padding: 10px;
+                margin-bottom: 20px;
+                text-align: center; /* Center the text */
+                display: inline-block; /* Center the block element */
+                width: 100%; /* Set the width to 100% to center it within the parent container */
+            }
+
+            header {
+                background-color: darkblue;
+                color: white;
+                padding: 15px;
+                text-align: center;
+                margin-top: 70px; /* Add margin-top to move the marquee below the navigation bar */
+            }
+
+/*------------------------------------------NAVIGATION BAR------------------------------------*/
+/* Integrated CSS Styles */
+.topnav {
+            display: inline-block;
+            justify-content: space-between; /* Adjusted for horizontal spacing */
+            background-color: beige;
+            padding: auto; /* Adjusted padding for better spacing */
+            border-bottom: 1px solid rgb(219, 219, 219);
+            top: 0%;
+            width: 100%; /* Full width */
+            position: relative; /* Set the navbar to fixed position */
+        }
+
+        .topnav ul {
+            list-style-type:none; /* Remove default list styles */
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .topnav a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin: auto;
+        }
+
+        .logo {
+            color: gray;
+        }
+
+        .topnav a:hover {
+            background-color: rgb(108, 233, 233);
+            color: rgba(0, 0, 0, 0.808);
+        }
+
+        .topnav a.active {
+            font-size: 25px;
+            font-weight: 900px;
+        }
+
+        .topnav a.active:hover {
+            background-color: white;
+        }
+
+        .topnav .main {
+            color: rgb(2, 172, 2);
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        .dropdown {
+            position: relative;
+            /* Adjusted for better dropdown positioning */
+        }
+
+        .dropdown .dropbtn {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.808);
+            text-align: center;
+            padding: 14px 16px; /* Adjusted padding for better spacing */
+            border: none;
+            outline: none;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin: auto;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(108, 233, 233);
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            font-weight: lighter;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 100%) {
+        .topnav a:not(.icon) {
+          display: none;
+        }
+
+        .topnav a.icon {
+          display: block;
+        }
+
+        .dropdown {
+          position: relative;
+        }
+
+        .topnav.responsive a {
+          display: block;
+          text-align: left;
+        }
+        }
+         /* Adjusted for better dropdown positioning on small screens */
+
+        @media screen and (max-width: 100%) {
+            .topnav.responsive {
+                position: none;
+            }
+
+            .topnav.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }  
+        ul {
+          display: flex;
+          justify-content: center;
+          list-style-type: none;
+          padding: 0;
+        }
+
+        </style>
+    </head>
+    <body>
+            <div class="topnav" id="myTopnav">
+                <a href="#" class="active"><span class="logo">College</span> Of Science and Technology</a>
+                <ul>
+                    <li><a href="assignment4.html">HOME</a></li>
+                    <li class="dropdown">
+                        <button class="dropbtn">NEWS</button>
+                        <div class="dropdown-content">
+                            <a href="News.html">Scholarship</a>
+                            <a href="Rec.HTML">Upcoming Events</a>
+                        </div>
+                        <i class="fa fa-angle-down"></i>
+                    </li>
+        
+                    <li class="dropdown">
+                        <button class="dropbtn">FACULTY MEMBERS</button>
+                        <div class="dropdown-content">
+                            <a href="cv1.html">About Faculty Members</a>
+                        </div>
+                        <i class="fa fa-angle-down"></i>
+                    </li>
+        
+                    <li class="dropdown">
+                        <button class="dropbtn">PROGRAM</button>
+                        <div class="dropdown-content">
+                            <a href="IT.html">Information Technology</a>
+                            <a href="CS.html">Computer Science</a>
+                            <a href="ETC.html">Electronics and Telecommunications</a>
+                        </div>
+                        <i class="fa fa-angle-down"></i>
+                    </li>
+        
+                    <li class="dropdown">
+                        <button class="dropbtn">COMPUTER LABS</button>
+                        <div class="dropdown-content">
+                            <a href="Lab1.html">Multimedia Lab</a>
+                            <a href="Lab2.html">E-Learning Lab</a>
+                            <a href="Lab3.html">Networking Lab</a>
+                            <a href="Lab4.html">IT Center Lab</a>
+                        </div>
+                        <i class="fa fa-angle-down"></i>
+                    </li>
+        
+                    <li class="dropdown">
+                        <button class="dropbtn">ABOUT US</button>
+                        <div class="dropdown-content">
+                            <a href="Aboutus.html">The University Of Cambodia</a>
+                        </div>
+                        <i class="fa fa-angle-down"></i>
+                    </li>
+                </ul>
+            </div><br>
+            
+            
+        <header>
+            <marquee behavior="scroll" direction="right" scrollamount="6">
+                <img src="images/photo_6_2023-12-30_14-52-37.jpg" alt="Assigment 4" style="width: 130px; height: 50px;" onerror="this.src='fallback-image.jpg';">
+                សូមស្វាគមន៍!  College of Science and Technology
+            </marquee>
+        </header><br>
+        
+        <div class="container mt-4">
+            <h1>Welcome to the College of Science and Technology</h1>
+            <p>
+                សូមស្វាគមន៍មកកាន់មហាវិទ្យាល័យវិទ្យាសាស្ត្រ និងបច្ចេកវិទ្យានៃសាកលវិទ្យាល័យកម្ពុជា។ សម្រាប់ប្អូនៗសិស្សានុសិស្ស ដែលមានបំណងចង់បន្តការសិក្សាថ្នាក់បរិញ្ញាបត្ររង និងថ្នាក់បរិញ្ញាបត្រ។ 
+                សូមចុះឈ្មោះជាមួយយើងឥឡូវនេះ ឬអាចអញ្ជើញមកកាន់សាកលវិទ្យាល័យផ្ទាល់ក៏បាន។
+            </p>
+            
+            <p>
+                Welcome to the College of Science and Technology of The University of Cambodia. For everyone who wishes to pursue AA and BA degrees of the study programs, please register now or visit the campus of The University of Cambodia.
+            </p>
+            <h2>Upcoming Events</h2>
+        <div class="row">
+            <div class="NEWS">
+                <h2>Events</h2>
+                <p>
+                    | 8-Jan-2024 |   First Day of Classes (Term 1 (B) (2023-2024) ( For I & K all Degree Programs) <br>
+                    
+                    | 18-Feb- 2024 |   Last Day of Classes ( Including Final Exams) <br>
+                    
+                    | 3-Mar-2024 |   Last Day of Classes ( Including Final Exams) (Term 1 (B) (2023-2024) ( For I & K all Degree Programs) <br>
+                    
+                    | 4-Mar-2024 |   First Day of Classes (Term 2 (2023-2024) <br>
+                    
+                    | 15-Jul-2024 |   First Day of Classes (Term 3 (2023-2024)<br>
+                    
+                    | 30-Jun-2024 |   Last Day of Classes ( Including Final Exams)<br>
+                    
+                    | 6-Oct-2024 |   Last Day of Classes ( Including Final Exams)<br>
+                </p>
+            </div>
+    </body>
+</html>
